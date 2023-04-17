@@ -237,34 +237,34 @@ class MyMainWindow(QMainWindow, Ui_Dialog):
         b = np.argmax(outputlist[0]) + 1
         birdimg_path_0 = os.path.join(os.getcwd(), 'birdimage')
         if b == 1:
-            result = '白腰草鹬'#'白腰杓鹬'
+            result = '白腰草鹬'
             bird_name = '白腰草鹬'
         elif b == 2:
-            result = '黄鹡鸰'#大杜鹃
+            result = '黄鹡鸰'
             bird_name = "黄鹡鸰"
         elif b == 3:
-            result = '家燕'#'白鹡鸰'
+            result = '家燕'
             bird_name = "家燕"
         elif b == 4:
             result = '矶鹬'
             bird_name = "矶鹬"
         elif b == 5:
-            result = '大杜鹃'#黑水鸡
+            result = '大杜鹃'
             bird_name = "大杜鹃"
         elif b == 6:
-            result = '黑水鸡'#红嘴鸥
+            result = '黑水鸡'
             bird_name = "黑水鸡"
         elif b == 7:
-            result = '大杜鹃'#家燕
+            result = '大杜鹃'
             bird_name = "大杜鹃"
         elif b == 8:
-            result = '白腰草鹬'#红脚鹬
+            result = '白腰草鹬'
             bird_name = "白腰草鹬"
         elif b == 9:
-            result = '白鹡鸰'#黄鹡鸰
+            result = '白鹡鸰'
             bird_name = "白鹡鸰"
         elif b == 10:
-            result = '红脚鹬'#白腰草鹬
+            result = '红脚鹬'
             bird_name = "红脚鹬"
         else:
             result = 'False'

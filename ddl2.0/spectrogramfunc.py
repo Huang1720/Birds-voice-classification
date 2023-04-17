@@ -5,6 +5,7 @@ import numpy as np
 import soundfile as sf
 
 
+# 传入单通道的图像，转换为3通道的图像
 def mono_to_color(X: np.ndarray, mean=None, std=None, norm_max=None, norm_min=None, eps=1e-6):
     X = np.stack([X, X, X], axis=-1)
     # Standardize
@@ -28,6 +29,7 @@ def mono_to_color(X: np.ndarray, mean=None, std=None, norm_max=None, norm_min=No
     return V
 
 
+# 读取音频文件，转换为梅尔频谱图，浮点精度可更改
 def trans_spec(path, period=5, img_size=224):
     for wav in os.listdir(path):
         signal, sr = sf.read(path + '\\' + wav)
